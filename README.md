@@ -39,7 +39,7 @@ Don't confuse the team name with the project name, a common mistake. If the URL 
 Don't confuse the project name with the project key, a common mistake! Your project key will be in the URL when viewing an item.
 
 * It should then look something like this:
-![alt text](https://raw.githubusercontent.com/nbrown02/FlowViz-Jira/main/Screenshots/Login1.png)
+![alt text](https://raw.githubusercontent.com/nbrown02/5-Minute-Capacity-Planning/main/Jira%20Load.png)
 
 * Hit 'Load' 
 * You will be prompted for a login, choose Basic and enter:
