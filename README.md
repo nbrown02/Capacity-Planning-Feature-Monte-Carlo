@@ -27,7 +27,7 @@ Don't confuse the team name with the project name, a common mistake. If the URL 
   - 'Organizational' and enter your Organization email/password (if required) and sign in
   - 'Basic' and use a Personal Access Token (PAT) to login, entering it in the password field (user can be left as blank - make sure it has 'Read' access to Analytics)
 
-  ![alt text](https://docs.microsoft.com/en-us/azure/devops/report/powerbi/media/authentication-7.png?view=azure-devops)
+![alt text](https://docs.microsoft.com/en-us/azure/devops/report/powerbi/media/authentication-7.png?view=azure-devops)
 
 * Once signed in hit 'Load' and wait for your charts to populate!
 
@@ -51,4 +51,5 @@ Don't confuse the project name with the project key, a common mistake! Your proj
 * Then hit 'Connect' and wait for the data and charts to load!
 
 ### How does it work?
-xxxxx
+
+![alt text](https://raw.githubusercontent.com/nbrown02/5-Minute-Capacity-Planning/main/Screenshot.png)
