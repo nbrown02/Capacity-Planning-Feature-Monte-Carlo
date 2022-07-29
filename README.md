@@ -8,7 +8,7 @@ This dashboard is for all those teams and organisations that spend hours in room
 * Download the appropriate template file:
   - [Azure DevOps / Azure DevOps Server / TFS version](https://github.com/nbrown02/FlowViz/raw/main/FlowViz%20(Project).pbit)
   - [Jira version](https://github.com/nbrown02/FlowViz/raw/main/FlowViz%20(Organization).pbit) 
-* Generate a Personal Access Token (PAT) if using Azure DevOps or a Jira API token if using Jira
+* Generate a Personal Access Token (PAT) if using Azure DevOps (make sure you have 'Read' Analytics access) or a Jira API token if using Jira
 * Then you're good to get started!
 
 ### Connectivity (Azure DevOps Version)
