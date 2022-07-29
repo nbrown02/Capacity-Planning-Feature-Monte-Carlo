@@ -6,8 +6,8 @@ This dashboard is for all those teams and organisations that spend hours in room
 ### Prerequisites
 * [Make sure you have the latest version of Power BI Desktop](https://aka.ms/pbiSingleInstaller)
 * Download the appropriate template file:
-  - [Azure DevOps / Azure DevOps Server / TFS version](https://github.com/nbrown02/FlowViz/raw/main/FlowViz%20(Project).pbit)
-  - [Jira version](https://github.com/nbrown02/FlowViz/raw/main/FlowViz%20(Organization).pbit) 
+  - [Azure DevOps / Azure DevOps Server / TFS version](https://github.com/nbrown02/5-Minute-Capacity-Planning/raw/main/5%20Minute%20Capacity%20Planning%20(Azure%20DevOps).pbit)
+  - [Jira version](https://github.com/nbrown02/5-Minute-Capacity-Planning/raw/main/5%20Minute%20Capacity%20Planning%20(Jira).pbit) 
 * Create/save an access token 
   - [Personal Access Token (PAT) if using Azure DevOps (make sure you have 'Read' Analytics access)](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)
   - [Jira API token if using Jira](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)
@@ -23,14 +23,12 @@ Don't confuse the team name with the project name, a common mistake. If the URL 
 
 * It should then look something like this:
 
-![alt text](https://raw.githubusercontent.com/nbrown02/FlowViz/main/Screenshots/AzDO%20Services%20Login.png)
+![alt text](https://raw.githubusercontent.com/nbrown02/5-Minute-Capacity-Planning/main/AzDO%20Load.png)
 
 * Hit 'Load' 
-* If you are prompted for a login, you can choose:
-  - 'Organizational' and enter your Organization email/password (if required) and sign in
-  - 'Basic' and use a Personal Access Token (PAT) to login, entering it in the password field (user can be left as blank - make sure it has 'Read' access to Analytics)
-
-![alt text](https://docs.microsoft.com/en-us/azure/devops/report/powerbi/media/authentication-7.png?view=azure-devops)
+* You will be prompted for a login, choose Basic and enter:
+  - Your PAT you created in the Prerequisites in the password field
+  - Leave the username as blank or enter 'Dummy'
 
 * Once signed in hit 'Load' and wait for your charts to populate!
 
