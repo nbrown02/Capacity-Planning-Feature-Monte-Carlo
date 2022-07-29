@@ -1,7 +1,7 @@
 # Five Minute Capacity Planning for Azure DevOps and Jira
 
 ### What is it?
-This dashboard is for all those teams and organisations that spend hours in rooms/on virtual meetings, wasting countless hours breaking work down and estimating each individual item to inform their leaders and stakeholders on capacity. Software development is complex yet we continue trying to play tetris when planning capacity. We can do better. This tool uses probabilistic thinking and estimation to provide better forecasts in as lightweight manner as possible, agnostic of whatever way of working the team uses. Inspired by this video from Prateek Singh, it provides a mechanism for teams to capacity plan in minutes, rather than hours.
+This dashboard is for all those teams and organisations that spend hours in rooms/on virtual meetings, wasting countless hours breaking work down and estimating each individual item to inform their leaders and stakeholders on capacity. Software development is complex yet we continue trying to play tetris when planning capacity. We can do better. This tool uses probabilistic thinking and estimation to provide better forecasts in as lightweight manner as possible, agnostic of whatever way of working the team uses. Inspired by [this video](https://youtu.be/3xX5AzKpV_Q) from [Prateek Singh](https://twitter.com/singhpr), it provides a mechanism for teams to capacity plan in minutes, rather than hours.
 
 ### Prerequisites
 * [Make sure you have the latest version of Power BI Desktop](https://aka.ms/pbiSingleInstaller)
