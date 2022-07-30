@@ -54,3 +54,11 @@ Don't confuse the project name with the project key, a common mistake! Your proj
 ### How does it work?
 
 ![alt text](https://raw.githubusercontent.com/nbrown02/5-Minute-Capacity-Planning/main/Screenshots/Screenshot.png)
+
+### Show me a real example
+
+![alt text](https://raw.githubusercontent.com/nbrown02/5-Minute-Capacity-Planning/main/Screenshots/Screenshot2.png)
+
+- This team has forecast 132 stories at the 85th percentile for the next 12 weeks
+- The 'right-size' for their Features is 9 stories or less (85th percentile)
+- 132/9 = 14 (rounded down) - this team has capacity for *14 Features* in the next 12 weeks.
