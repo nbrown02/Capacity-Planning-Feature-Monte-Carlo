@@ -29,6 +29,8 @@ Don't confuse the team name with the project name, a common mistake. If the URL 
 * You will be prompted for a login, choose Basic and enter:
   - Your PAT you created in the Prerequisites in the password field
   - Leave the username as blank or enter 'Dummy'
+  
+![alt text](https://docs.microsoft.com/en-us/azure/devops/report/powerbi/media/authentication-7.png?view=azure-devops)
 
 * Once signed in hit 'Load' and wait for your charts to populate!
 
