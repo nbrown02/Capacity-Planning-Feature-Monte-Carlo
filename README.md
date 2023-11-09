@@ -7,12 +7,12 @@ This will detail the ‘rightsize’ for your Features, the number of these Feat
 To better understand how ‘big’ (in terms of child items) your Features/Epics are, as well as how many Features you have capacity for in a given time period (e.g. a quarter). In addition to this, you can use it to improve your confidence around delivery dates for Features/Epics.
 
 ### When would you use it?
-You can use the rightsizing page on a frequent basis (e.g. weekly) for monitoring Feature/Epic size. Capacity Planning could be used in the build-up to quarterly planning (or similar type of event if you have it) to understand team capacity) and the Feature Monte Carlo can be used weekly to track progress of Features.
+You can use the rightsizing page on a frequent basis (e.g. weekly) for monitoring Feature/Epic size. Capacity Planning could be used in the build-up to quarterly planning (or similar type of event if you have it) to understand team capacity and the Feature Monte Carlo can be used weekly to track progress of Features.
 
 ### Prerequisites
 * Your team needs to have the following practices in place:
-  - Your team(s) regularly review and move work items (User Stories, PBIs, Features, Epics, etc.) to in progress (when started) and done (once complete)
-  - Your team(s) regularly monitor the size (in terms of number of child work items) of Features/Epics
+  - Your team regularly review and move work items (User Stories, PBIs, Features, Epics, etc.) to in progress (when started) and done (once complete)
+  - Your team regularly monitor the size (in terms of number of child work items) of Features/Epics
   - At all levels you always try to break work down to thin, vertical slices
   - Features/Epics are 'owned' by a single team (i.e. not shared across multiple teams)
 * Download the appropriate template file:
@@ -63,14 +63,33 @@ Don't confuse the project name with the project key, a common mistake! Your proj
 
 * Then hit 'Connect' and wait for the data and charts to load!
 
-### How does it work?
+## Using the report
+There are a few different ways you can use each chart.
 
-![alt text](https://raw.githubusercontent.com/nbrown02/5-Minute-Capacity-Planning/main/Screenshots/Screenshot.png)
+### Feature Rightsizingx
 
-### Show me a real example
+![image-20230922-111614](https://github.com/nbrown02/5-Minute-Capacity-Planning/assets/29369962/9031b0aa-3d5f-46a2-ac14-a52c486b608c)
 
-![alt text](https://raw.githubusercontent.com/nbrown02/5-Minute-Capacity-Planning/main/Screenshots/Screenshot2.png)
+Using this chart we can see that the “right size” for our Features is 7 child items (User Stories/PBIs) or less. We should therefore try to ensure the majority of our Features are no bigger than this. The table to the right highlights any ‘open’ Features that are under/at/exceed our rightsize. You’d use this to focus on those that are “too big” and potentially be trying to find ways to break them down.
 
-- This team has forecast 45 at the 95th percentile for the next 13 weeks
-- The 'right-size' for their Features is 8 stories or less (95th percentile)
-- 45/8 = 5 (rounded down) - this team has capacity for *5 Features* in the next 13 weeks.
+### Feature Capacity Planning
+
+![image-20230926-092436](https://github.com/nbrown02/5-Minute-Capacity-Planning/assets/29369962/5acbc3f2-a0ed-4881-b7b5-8a7f97c8ae5e)
+
+Using this chart we can see that we are forecasting this team have an 85% likelihood of completing 96 stories or more in the next 12 weeks. We can also see that 85% of our Features have 7 child items or less. When we divide 96 by 7 we get 13.71 - seen as we can’t have .71 of a Feature we round down therefore we can say that in the next 12 weeks, this team has capacity for 13 rightsized Features.
+
+One of the advantages of this approach is the ability to see the likelihood of different outcomes that could occur and how reasonable (or unreasonable!) expectations may be around capacity. Use the dropdown to play around with the different percentile likelihoods depending on your risk appetite:
+
+![FCRESULTS3 (1)](https://github.com/nbrown02/5-Minute-Capacity-Planning/assets/29369962/2f5ccfab-3edb-4a43-b707-408fdbe7e387)
+
+### Feature Monte Carlo
+There are two main ways to use this report:
+
+Better understand/manage expectations on delivery - by using this report you are able to define a target date and percentage likelihood outcome to aim for. You can play around with the drop down options for these two fields to see the different outcomes that could occur and how likely (or unlikely!) an outcome for a particular Feature is.
+
+![1_Qy8ivTXv3DuBaZ1FOKY13w](https://github.com/nbrown02/5-Minute-Capacity-Planning/assets/29369962/fc51122d-1c68-4a15-a58a-67ba29491f52)
+
+Understand the impact WIP has on delivery - the problem with forecasting at Feature level is that it typically assumes one feature is worked on sequentially in priority order by a team, which is simply not the reality we face. It is underestimated just how much of an impact Feature WIP has on teams. Even if a team is limiting WIP at story level, this is redundant for Feature throughput if WIP is not limited at the level above that. We can see the impact of this with a very quick example:
+
+![1_P6Gk1x_ijr3t_Ca-hzhV3g](https://github.com/nbrown02/5-Minute-Capacity-Planning/assets/29369962/ae7ba0cc-c159-44b4-bad0-7d2a8e56f360)
+
