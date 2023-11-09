@@ -1,10 +1,20 @@
 # Five Minute Capacity Planning for Azure DevOps and Jira
 
-### What is it?
-This dashboard is for all those teams and organisations that spend hours in rooms/on virtual meetings, wasting countless hours breaking work down and estimating each individual item to inform their leaders and stakeholders on capacity. Software development is complex yet we continue trying to play tetris when planning capacity. We can do better. This tool uses probabilistic thinking and estimation to provide better forecasts in as lightweight manner as possible, agnostic of whatever way of working the team uses. Inspired by [this video](https://youtu.be/3xX5AzKpV_Q) from [Prateek Singh](https://twitter.com/singhpr), it provides a mechanism for teams to capacity plan in minutes, rather than hours.
+### What is this report? 
+This will detail the ‘rightsize’ for your Features, the number of these Features you have capacity for in a given time period and the likely completion date of Features in your backlog right now based on the number of child items and a forecasted target date. Please note, when I say Features, I mean the backlog hierarchy level above User Story/Product Backlog Item. You may call this something different in your context (e.g. Epic), but for simplicity I am using the term "Feature".
+
+### Why would you use it? 
+To better understand how ‘big’ (in terms of child items) your Features/Epics are, as well as how many Features you have capacity for in a given time period (e.g. a quarter). In addition to this, you can use it to improve your confidence around delivery dates for Features/Epics.
+
+### When would you use it?
+You can use the rightsizing page on a frequent basis (e.g. weekly) for monitoring Feature/Epic size. Capacity Planning could be used in the build-up to quarterly planning (or similar type of event if you have it) to understand team capacity) and the Feature Monte Carlo can be used weekly to track progress of Features.
 
 ### Prerequisites
-* [Make sure you have the latest version of Power BI Desktop](https://aka.ms/pbiSingleInstaller)
+* Your team needs to have the following practices in place:
+  - Your team(s) regularly review and move work items (User Stories, PBIs, Features, Epics, etc.) to in progress (when started) and done (once complete)
+  - Your team(s) regularly monitor the size (in terms of number of child work items) of Features/Epics
+  - At all levels you always try to break work down to thin, vertical slices
+  - Features/Epics are 'owned' by a single team (i.e. not shared across multiple teams)
 * Download the appropriate template file:
   - [Azure DevOps / Azure DevOps Server / TFS version](https://github.com/nbrown02/5-Minute-Capacity-Planning/raw/main/5%20Minute%20Capacity%20Planning%20(Azure%20DevOps).pbit)
   - [Jira version](https://github.com/nbrown02/5-Minute-Capacity-Planning/raw/main/5%20Minute%20Capacity%20Planning%20(Jira).pbit) 
@@ -17,7 +27,7 @@ This dashboard is for all those teams and organisations that spend hours in room
 * Open the .pbit file in Power BI Desktop
 * Select http/https (only choose http if your Azure DevOps Server is HTTP)
 * Add the Analytics / Azure DevOps Server URL - for Azure DevOps services enter 'analytics.dev.azure.com' / for Azure DevOps Server enter your server details
-* Add your organization and project name
+* Add your organization, project name and team name
 
 Don't confuse the team name with the project name, a common mistake. If the URL you use is "http://dev.azure.com/Microsoft-UK/AzureDevOpsTeam/Database", then Microsoft-UK is the Organization Name, AzureDevOpsTeam is the Project name, Database is the team name.
 
