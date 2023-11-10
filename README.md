@@ -16,8 +16,8 @@ You can use the rightsizing page on a frequent basis (e.g. weekly) for monitorin
   - At all levels you always try to break work down to thin, vertical slices
   - Features/Epics are 'owned' by a single team (i.e. not shared across multiple teams)
 * Download the appropriate template file:
-  - [Azure DevOps / Azure DevOps Server / TFS version](https://github.com/nbrown02/5-Minute-Capacity-Planning/raw/main/5%20Minute%20Capacity%20Planning%20(Azure%20DevOps).pbit)
-  - [Jira version](https://github.com/nbrown02/5-Minute-Capacity-Planning/raw/main/5%20Minute%20Capacity%20Planning%20(Jira).pbit) 
+  - [Azure DevOps / Azure DevOps Server / TFS version](https://github.com/nbrown02/Capacity-Planning-Feature-Monte-Carlo/raw/main/Capacity%20Planning%20&%20Feature%20Monte%20Carlo%20(ADO).pbit)
+  - [Jira version](https://github.com/nbrown02/Capacity-Planning-Feature-Monte-Carlo/raw/main/Capacity%20Planning%20&%20Feature%20Monte%20Carlo%20(Jira).pbit) 
 * Create/save an access token 
   - [Personal Access Token (PAT) if using Azure DevOps (make sure you have 'Read' Analytics access)](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)
   - [Jira API token if using Jira](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)
