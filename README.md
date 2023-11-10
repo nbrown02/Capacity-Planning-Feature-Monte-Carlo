@@ -33,7 +33,7 @@ Don't confuse the team name with the project name, a common mistake. If the URL 
 
 * It should then look something like this:
 
-![alt text](https://raw.githubusercontent.com/nbrown02/5-Minute-Capacity-Planning/main/Screenshots/AzDO%20Load.png)
+![image](https://github.com/nbrown02/Capacity-Planning-Feature-Monte-Carlo/assets/29369962/16424b1e-e43e-44c9-b460-3f69c75e083e)
 
 * Hit 'Load' 
 * You will be prompted for a login, choose Basic and enter:
@@ -52,7 +52,7 @@ Don't confuse the team name with the project name, a common mistake. If the URL 
 Don't confuse the project name with the project key, a common mistake! Your project key will be in the URL when viewing an item.
 
 * It should then look something like this:
-![alt text](https://raw.githubusercontent.com/nbrown02/5-Minute-Capacity-Planning/main/Screenshots/Jira%20Load.png)
+![image](https://github.com/nbrown02/Capacity-Planning-Feature-Monte-Carlo/assets/29369962/2a24cc23-d6d5-4768-9bcf-12e6bf27bc58)
 
 * Hit 'Load' 
 * You will be prompted for a login, choose Basic and enter:
@@ -92,4 +92,8 @@ Better understand/manage expectations on delivery - by using this report you are
 Understand the impact WIP has on delivery - the problem with forecasting at Feature level is that it typically assumes one feature is worked on sequentially in priority order by a team, which is simply not the reality we face. It is underestimated just how much of an impact Feature WIP has on teams. Even if a team is limiting WIP at story level, this is redundant for Feature throughput if WIP is not limited at the level above that. We can see the impact of this with a very quick example:
 
 ![1_P6Gk1x_ijr3t_Ca-hzhV3g](https://github.com/nbrown02/5-Minute-Capacity-Planning/assets/29369962/ae7ba0cc-c159-44b4-bad0-7d2a8e56f360)
+
+### Know limitations/common questions
+- The Jira version only works at project level, if you have multiple teams in a project you will need to modify this using the field you use to differentiate a team with
+- The ADO version is team level only as, due to the monte carlo simulations, doing it at a project level would likely mean the report would not load (due to the amount of rows needed)
 
