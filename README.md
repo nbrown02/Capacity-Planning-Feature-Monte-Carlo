@@ -96,4 +96,5 @@ Understand the impact WIP has on delivery - the problem with forecasting at Feat
 ### Know limitations/common questions
 - The Jira version only works at project level, if you have multiple teams in a project you will need to modify this using the field you use to differentiate a team with
 - The ADO version is team level only as, due to the monte carlo simulations, doing it at a project level would likely mean the report would not load (due to the amount of rows needed)
-
+- A Process Behaviour Chart is included in the What Will We Get? help tooltip, which indicates how predictable your input data (Throughput) is
+![Screenshot (125)](https://github.com/nbrown02/Capacity-Planning-Feature-Monte-Carlo/assets/29369962/a093477d-859b-4839-bfd0-faf0a3483b46)
