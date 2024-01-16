@@ -1,4 +1,4 @@
-# Capacity Planning & Feature Monte Carlo for Azure DevOps and Jira
+# Capacity Planning & Feature Monte Carlo for Azure DevOps and Jira (Cloud)
 
 ### What is this report? 
 This will detail the ‘rightsize’ for your Features, the number of these Features you have capacity for in a given time period and the likely completion date of Features in your backlog right now based on the number of child items and a forecasted target date. Please note, when I say Features, I mean the backlog hierarchy level above User Story/Product Backlog Item. You may call this something different in your context (e.g. Epic), but for simplicity I am using the term "Feature".
