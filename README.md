@@ -83,7 +83,7 @@ There are two main ways to use this report:
 
 Better understand/manage expectations on delivery - by using this report you are able to define a target date and percentage likelihood outcome to aim for. You can play around with the drop down options for these two fields to see the different outcomes that could occur and how likely (or unlikely!) an outcome for a particular Feature is.
 
-<img width="1614" height="871" alt="image" src="https://github.com/user-attachments/assets/72521f61-96ec-4455-8a48-fa1bb5b71623" />
+<img width="844" height="448" alt="image" src="https://github.com/user-attachments/assets/cb993eae-caf5-4143-a5cb-24c69ac699ae" />
 
 Understand the impact WIP has on delivery - the problem with forecasting at Feature level is that it typically assumes one feature is worked on sequentially in priority order by a team, which is simply not the reality we face. It is underestimated just how much of an impact Feature WIP has on teams. Even if a team is limiting WIP at story level, this is redundant for Feature throughput if WIP is not limited at the level above that.
 
