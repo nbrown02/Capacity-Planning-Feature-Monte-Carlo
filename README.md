@@ -1,13 +1,17 @@
 # Capacity Planning & Feature Monte Carlo for Azure DevOps and Jira (Cloud)
 
 ### What is this report? 
-This will detail the ‘rightsize’ for your Features, the number of these Features you have capacity for in a given time period and the likely completion date of Features in your backlog right now based on the number of child items and a forecasted target date. Please note, when I say Features, I mean the backlog hierarchy level above User Story/Product Backlog Item. You may call this something different in your context (e.g. Epic), but for simplicity I am using the term "Feature".
+This will the likely completion date of Features in your backlog right now based on the number of child items and a forecasted target date, detail the ‘rightsize’ for your Features as well as the number of these Features you have capacity for in a given time period . Please note, when I say Features, I mean the backlog hierarchy level above User Story/Product Backlog Item. The respective templates use the appropriate terminology (e.g. Jira uses Epic, ADO uses Feature).
 
 ### Why would you use it? 
-To better understand how ‘big’ (in terms of child items) your Features/Epics are, as well as how many Features you have capacity for in a given time period (e.g. a quarter). In addition to this, you can use it to improve your confidence around delivery dates for Features/Epics.
+- Use it to improve your confidence around delivery dates for Features/Epics, as well as modelling 'what if' scenarios. 
+- Better understand how ‘big’ (in terms of child items) your Features/Epics are
+- Understand how many Features/Epics you have capacity for in a given time period (e.g. a quarter/quarterly planning)
 
 ### When would you use it?
-You can use the rightsizing page on a frequent basis (e.g. weekly) for monitoring Feature/Epic size. Capacity Planning could be used in the build-up to quarterly planning (or similar type of event if you have it) to understand team capacity and the Feature Monte Carlo can be used weekly to track progress of Features.
+- You can use the Epic/Feature Monte Carlo as often as you need to (at a minimum I'd say weekly) to understand forecasted delivery dates vs. expectations
+- You can use the rightsizing page on a frequent basis (e.g. weekly) for monitoring Feature/Epic size.
+- Capacity Planning could be used in the build-up to quarterly planning (or similar type of event if you have it) to understand team capacity
 
 ### Prerequisites
 * Your team needs to have the following practices in place:
@@ -27,13 +31,13 @@ You can use the rightsizing page on a frequent basis (e.g. weekly) for monitorin
 * Open the .pbit file in Power BI Desktop
 * Select http/https (only choose http if your Azure DevOps Server is HTTP)
 * Add the Analytics / Azure DevOps Server URL - for Azure DevOps services enter 'analytics.dev.azure.com' / for Azure DevOps Server enter your server details
-* Add your organization, project name and team name
+* Add your organization, project name and team name, as well as the projects where the respective work items (Stories/Features/Epics) live. This may be the same project for all of them, or you may use different projects for 'portfolio' views.
 
 Don't confuse the team name with the project name, a common mistake. If the URL you use is "http://dev.azure.com/Microsoft-UK/AzureDevOpsTeam/Database", then Microsoft-UK is the Organization Name, AzureDevOpsTeam is the Project name, Database is the team name.
 
 * It should then look something like this:
 
-![image](https://github.com/nbrown02/Capacity-Planning-Feature-Monte-Carlo/assets/29369962/16424b1e-e43e-44c9-b460-3f69c75e083e)
+<img width="650" height="600" alt="image" src="https://github.com/user-attachments/assets/77dc6148-5487-4f43-be3f-46c61edfdef7" />
 
 * Hit 'Load' 
 * You will be prompted for a login, choose Basic and enter:
@@ -44,15 +48,23 @@ Don't confuse the team name with the project name, a common mistake. If the URL 
 
 * Once signed in hit 'Load' and wait for your charts to populate!
 
+
 ### Connectivity (Jira Version)
 * Open the .pbit file in Power BI Desktop
 * Add your Jira URL 
-* Add your Jira Project Key 
+* Add your Jira Project Keys for where Stories and Epics live, this may be the same project (if so just copy/paste) or different
 
 Don't confuse the project name with the project key, a common mistake! Your project key will be in the URL when viewing an item.
 
+* Add the custom field value for the rank field - to figure this out go to the jira search in your respective instance and start to type 'Rank' into the search, as you type it will reveal the custom field ID:
+
+  <img width="400" height="150" alt="image" src="https://github.com/user-attachments/assets/a32a7fc2-71be-4c92-92e0-ea375a39d7d9" />
+
+  Therefore I would enter customfield_10019
+  
 * It should then look something like this:
-![image](https://github.com/nbrown02/Capacity-Planning-Feature-Monte-Carlo/assets/29369962/2a24cc23-d6d5-4768-9bcf-12e6bf27bc58)
+
+<img width="650" height="600" alt="image" src="https://github.com/user-attachments/assets/3b88edb7-f4d5-4e0e-860e-6acd571b363c" />
 
 * Hit 'Load' 
 * You will be prompted for a login, choose Basic and enter:
@@ -66,7 +78,16 @@ Don't confuse the project name with the project key, a common mistake! Your proj
 ## Using the report
 There are a few different ways you can use each chart.
 
-### Feature Rightsizingx
+### Feature Monte Carlo
+There are two main ways to use this report:
+
+Better understand/manage expectations on delivery - by using this report you are able to define a target date and percentage likelihood outcome to aim for. You can play around with the drop down options for these two fields to see the different outcomes that could occur and how likely (or unlikely!) an outcome for a particular Feature is.
+
+<img width="1614" height="871" alt="image" src="https://github.com/user-attachments/assets/72521f61-96ec-4455-8a48-fa1bb5b71623" />
+
+Understand the impact WIP has on delivery - the problem with forecasting at Feature level is that it typically assumes one feature is worked on sequentially in priority order by a team, which is simply not the reality we face. It is underestimated just how much of an impact Feature WIP has on teams. Even if a team is limiting WIP at story level, this is redundant for Feature throughput if WIP is not limited at the level above that.
+
+### Feature Rightsizing
 
 ![image-20230922-111614](https://github.com/nbrown02/5-Minute-Capacity-Planning/assets/29369962/9031b0aa-3d5f-46a2-ac14-a52c486b608c)
 
@@ -81,17 +102,6 @@ Using this chart we can see that we are forecasting this team have an 85% likeli
 One of the advantages of this approach is the ability to see the likelihood of different outcomes that could occur and how reasonable (or unreasonable!) expectations may be around capacity. Use the dropdown to play around with the different percentile likelihoods depending on your risk appetite:
 
 ![FCRESULTS3 (1)](https://github.com/nbrown02/5-Minute-Capacity-Planning/assets/29369962/2f5ccfab-3edb-4a43-b707-408fdbe7e387)
-
-### Feature Monte Carlo
-There are two main ways to use this report:
-
-Better understand/manage expectations on delivery - by using this report you are able to define a target date and percentage likelihood outcome to aim for. You can play around with the drop down options for these two fields to see the different outcomes that could occur and how likely (or unlikely!) an outcome for a particular Feature is.
-
-![1_Qy8ivTXv3DuBaZ1FOKY13w](https://github.com/nbrown02/5-Minute-Capacity-Planning/assets/29369962/fc51122d-1c68-4a15-a58a-67ba29491f52)
-
-Understand the impact WIP has on delivery - the problem with forecasting at Feature level is that it typically assumes one feature is worked on sequentially in priority order by a team, which is simply not the reality we face. It is underestimated just how much of an impact Feature WIP has on teams. Even if a team is limiting WIP at story level, this is redundant for Feature throughput if WIP is not limited at the level above that. We can see the impact of this with a very quick example:
-
-![1_P6Gk1x_ijr3t_Ca-hzhV3g](https://github.com/nbrown02/5-Minute-Capacity-Planning/assets/29369962/ae7ba0cc-c159-44b4-bad0-7d2a8e56f360)
 
 ### Know limitations/common questions
 - The Jira version only works at project level, if you have multiple teams in a project you will need to modify this using the field you use to differentiate a team with
