@@ -14,6 +14,7 @@ This will the likely completion date of Features in your backlog right now based
 - Capacity Planning could be used in the build-up to quarterly planning (or similar type of event if you have it) to understand team capacity
 
 ### Prerequisites
+* [Make sure you have the latest version of Power BI Desktop](https://aka.ms/pbiSingleInstaller)
 * Your team needs to have the following practices in place:
   - Your team regularly review and move work items (User Stories, PBIs, Features, Epics, etc.) to in progress (when started) and done (once complete)
   - Your team regularly monitor the size (in terms of number of child work items) of Features/Epics
