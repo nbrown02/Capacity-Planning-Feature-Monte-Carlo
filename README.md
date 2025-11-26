@@ -1,4 +1,4 @@
-# Capacity Planning & Feature Monte Carlo for Azure DevOps and Jira (Cloud)
+# Capacity Planning & Feature Monte Carlo for Azure DevOps and Jira (Cloud or Server)
 
 ### What is this report? 
 This will the likely completion date of Features in your backlog right now based on the number of child items and a forecasted target date, detail the ‘rightsize’ for your Features as well as the number of these Features you have capacity for in a given time period . Please note, when I say Features, I mean the backlog hierarchy level above User Story/Product Backlog Item. The respective templates use the appropriate terminology (e.g. Jira uses Epic, ADO uses Feature).
@@ -22,7 +22,8 @@ This will the likely completion date of Features in your backlog right now based
   - Features/Epics are 'owned' by a single team (i.e. not shared across multiple teams)
 * Download the appropriate template file:
   - [Azure DevOps / Azure DevOps Server / TFS version](https://github.com/nbrown02/Capacity-Planning-Feature-Monte-Carlo/raw/main/Capacity%20Planning%20&%20Feature%20Monte%20Carlo%20(ADO).pbit)
-  - [Jira version](https://github.com/nbrown02/Capacity-Planning-Feature-Monte-Carlo/raw/main/Capacity%20Planning%20&%20Feature%20Monte%20Carlo%20(Jira).pbit) 
+  - [Jira cloud version](https://github.com/nbrown02/Capacity-Planning-Feature-Monte-Carlo/raw/main/Capacity%20Planning%20&%20Feature%20Monte%20Carlo%20(Jira).pbit)
+  - [Jira Server version](https://github.com/nbrown02/Capacity-Planning-Feature-Monte-Carlo/raw/refs/heads/main/Capacity%20Planning%20&%20Feature%20Monte%20Carlo%20(Jira%20Server).pbit)
 * Create/save an access token 
   - [Personal Access Token (PAT) if using Azure DevOps (make sure you have 'Read' Analytics access)](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)
   - [Jira API token if using Jira](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)
